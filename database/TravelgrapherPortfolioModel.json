@@ -1,0 +1,41 @@
+{
+    "Portfolios" :
+    {
+        "jcena" :
+        {
+            "photo paths" :
+            [
+            ],
+            "video paths" :
+            [
+            ],
+            "VR paths" :
+            [
+            ]
+        },
+        "hulkhogan" :
+        {
+            "photo paths" :
+            [
+            ],
+            "video paths" :
+            [
+            ],
+            "VR paths" :
+            [
+            ]
+        },
+        "fpj" :
+        {
+            "photo paths" :
+            [
+            ],
+            "video paths" :
+            [
+            ],
+            "VR paths" :
+            [
+            ]
+        }
+    }
+}

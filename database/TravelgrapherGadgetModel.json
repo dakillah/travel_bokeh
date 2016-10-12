@@ -1,0 +1,25 @@
+{
+    "Gadgets" :
+    {
+        "GGT001" :
+        {
+            "id" : "GGT001",
+            "gadget name" : "DSLR Camera"
+        },
+        "GGT002" :
+        {
+            "id" : "GGT002",
+            "gadget name" : "Go Pro"
+        },
+        "GGT003" :
+        {
+            "id" : "GGT003",
+            "gadget name" : "Drone"
+        },
+        "GGT004" :
+        {
+            "id" : "GGT004",
+            "gadget name" : "Selfie Stick"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "Travelgraphers" :
+    [
+        {
+            "profile" : "jcena",
+            "destinations" :
+            [
+                "SG01",
+                "SG02",
+                "SG03"
+            ],
+            "services" : "",
+            "gadgets" : "",
+            "reviews" : "",
+            "portfolio" : ""
+        },
+        {
+            "profile" : "hulkhogan",
+            "destinations" :
+            [
+                "SG03"
+            ],
+            "services" : "",
+            "gadgets" : "",
+            "reviews" : "",
+            "portfolio" : ""
+        },
+        {
+            "profile" : "fpj",
+            "destinations" :
+            [
+                "SG01",
+                "SG02"
+            ],
+            "services" : "",
+            "gadgets" : "",
+            "reviews" : "",
+            "portfolio" : ""
+        }
+    ]
+}

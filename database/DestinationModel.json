@@ -1,0 +1,23 @@
+{
+    "Destinations" :
+    {
+        "SG01" :
+        {
+            "id" : "SG01",
+            "name" : "Singapore Food",
+            "imagePath" : "SingaporeFood.jpg"
+        },
+        "SG02" :
+        {
+            "id" : "SG02",
+            "name" : "Singapore Night Life",
+            "imagePath" : "SingaporeNight.jpg"
+        },
+        "SG03" :
+        {
+            "id" : "SG03",
+            "name" : "Singapore Tour",
+            "imagePath" : "SingaporeTour.jpg"
+        }
+    }
+}

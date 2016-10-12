@@ -1,0 +1,20 @@
+{
+    "Services" :
+    {
+        "SVC001" :
+        {
+            "id" : "SVC001",
+            "service name" : "Tourguide"
+        },
+        "SVC002" :
+        {
+            "id" : "SVC003",
+            "service name" : "Photographer"
+        },
+        "SVC003" :
+        {
+            "id" : "SVC003",
+            "service name" : "Videographer"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "Travels" :
+    [
+        {
+            "id" : "TRV0001",
+            "traveller id" : "abourdain",
+            "travelgrapher id" : "jcena",
+            "start date" : "",
+            "end date" : "",
+            "services used" :
+            [
+            ],
+            "gadgets used" :
+            [
+            ],
+            "photos" :
+            [
+            ],
+            "videos" :
+            [
+            ],
+            "VRs" :
+            [
+            ]
+        },
+        {
+            "id" : "TRV0002",
+            "traveller id" : "abourdain",
+            "travelgrapher id" : "hulkhogan",
+            "start date" : "",
+            "end date" : "",
+            "services used" :
+            [
+            ],
+            "gadgets used" :
+            [
+            ],
+            "photos" :
+            [
+            ],
+            "videos" :
+            [
+            ],
+            "VRs" :
+            [
+            ]
+        },
+        {
+            "id" : "TRV0003",
+            "traveller id" : "abourdain",
+            "travelgrapher id" : "fpj",
+            "start date" : "",
+            "end date" : "",
+            "services used" :
+            [
+            ],
+            "gadgets used" :
+            [
+            ],
+            "photos" :
+            [
+            ],
+            "videos" :
+            [
+            ],
+            "VRs" :
+            [
+            ]
+        }
+    ]
+}
