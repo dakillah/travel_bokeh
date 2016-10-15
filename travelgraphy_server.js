@@ -3,6 +3,11 @@ var app = express();
 var fs = require('fs');
 var bodyParser = require('body-parser');
 
+var mongojs = require('mongojs');
+//db = mongojs('travelbokeh_db',['travelgraphers','profiles']);
+db = mongojs('bokeh:bokeh123@ds011271.mlab.com:11271/travelbokeh_db',['travelgraphers','profiles']);
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded()); // to support URL-encoded bodies
 
@@ -25,43 +30,9 @@ function readJSON(filename)
     return parsedData;
 }
 
-function getJSONList(IDs, modelName)
-{
-    var modelList = database[modelName];
-    var rcModelList = [];
-
-    for(idx in IDs)
-    {
-        var id = IDs[idx];
-
-        for(idx2 in modelList)
-        {
-
-            if(modelList[idx2]["id"] == id)
-            {
-                rcModelList.push(modelList[idx2]);
-                break;
-            }
-        }
-    }
-
-    return rcModelList;
-}
-
-function replaceIDWithJSONObj()
-{
-    for(idx in database["Travelgraphers"])
-    {
-        var travelgrapher = database["Travelgraphers"][idx];
-        travelgrapher["destinations"] = getJSONList(travelgrapher["destinations"], "Destinations");
-        travelgrapher["services"] = getJSONList(travelgrapher["services"], "Services");
-        travelgrapher["gadgets"] = getJSONList(travelgrapher["gadgets"], "Gadgets");
-        travelgrapher["reviews"] = getJSONList(travelgrapher["reviews"], "Reviews");
-    }
-}
-
 function createDB()
 {
+    
     var profileModel = readJSON("ProfileModel.json");
     var destinationModel = readJSON("DestinationModel.json");
     var travelgrapherModel = readJSON("TravelgrapherModel.json");
@@ -78,8 +49,28 @@ function createDB()
     database = mergeJSON(database, travelgrapherReviewModel);
     database = mergeJSON(database, travelgrapherPortfolioModel);
     database = mergeJSON(database, travelModels);
+}
 
-    replaceIDWithJSONObj();
+function getJSONList(IDs, modelName)
+{
+    var modelList = database[modelName];
+    var rcModelList = [];
+
+    for(idx in IDs)
+    {
+        var id = IDs[idx];
+
+        for(idx2 in modelList)
+        {
+            if(modelList[idx2]["id"] == id)
+            {
+                rcModelList.push(modelList[idx2]);
+                break;
+            }
+        }
+    }
+
+    return rcModelList;
 }
 
 function populateTravelgrapherDetails(profile)
@@ -110,21 +101,44 @@ function populateTravelgrapherDetails(profile)
     return targetProfile;
 }
 
+function getTravelgraphers(callback){
+
+    console.log('<<getTravelgraphers>>\n');
+
+    db.travelgraphers.find(function(err,docs){
+        if(err){
+            callback(err,null);
+        }
+        callback(null,docs);
+
+    })
+
+
+};
+
+
 app.get('/listDestinations', function (req, res)
 {
-    var destinations = JSON.parse(JSON.stringify(database["Destinations"]));
+    var destinations = database["Destinations"];
     res.json(destinations);
 })
 
 app.get('/listTravelgraphers', function (req, res)
 {
-    var travelgraphers = JSON.parse(JSON.stringify(database["Travelgraphers"]));
-    res.json(travelgraphers);
+    //var travelgraphers = database["Travelgraphers"];  
+
+    getTravelgraphers(function(err,docs){
+        if(err){
+            res.status(400);
+        }
+        res.json(docs);
+    })
+    //res.json(travelgraphers);
 })
 
 app.get('/listTravelgraphers:destination_id', function (req, res)
 {
-    var travelgraphers = JSON.parse(JSON.stringify(database["Travelgraphers"]));
+    var travelgraphers = database["Travelgraphers"];
     var targetTravelgraphers = [];
 
     for( idx in travelgraphers )
@@ -134,7 +148,7 @@ app.get('/listTravelgraphers:destination_id', function (req, res)
         var found = 0;        
         for( dst_idx in entry["destinations"] )
         {
-            if( entry["destinations"][dst_idx]["id"] == req.params.destination_id )
+            if( entry["destinations"][dst_idx] == req.params.destination_id )
             {
                 console.log(entry);
                 found = 1;
@@ -151,14 +165,13 @@ app.get('/listTravelgraphers:destination_id', function (req, res)
 
 app.get('/listTravels', function (req, res)
 {
-    var travels = JSON.parse(JSON.stringify(database["Travels"]));
-
+    var travels = database["Travels"];
     res.json(travels);
 })
 
 app.get('/listTravelsByTravelgrapher:travelgrapher_id', function (req, res)
 {
-    var travels = JSON.parse(JSON.stringify(database["Travels"]));
+    var travels = database["Travels"];
     var targetTravels = [];
 
     for(idx in travels)
@@ -172,7 +185,7 @@ app.get('/listTravelsByTravelgrapher:travelgrapher_id', function (req, res)
 
 app.get('/listTravelsByTraveller:traveller_id', function (req, res)
 {
-    var travels = JSON.parse(JSON.stringify(database["Travels"]));
+    var travels = database["Travels"];
     var targetTravels = [];
 
     for(idx in travels)
