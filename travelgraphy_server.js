@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
 var fs = require('fs');
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded()); // to support URL-encoded bodies
 
 var database;
 
@@ -115,6 +119,29 @@ app.get('/listTravelsByTraveller:traveller_id', function (req, res)
     }
 
     res.json(targetTravels);
+})
+
+app.post('/login', function (req, res)
+{
+    var username = req.body.username;
+    var password = req.body.password;
+    var profiles = database["Profiles"];
+
+    var targetProfile = [];
+
+    for(idx in profiles)
+    {
+        if( profiles[idx]["id"] == username && profiles[idx]["pw"] == password )
+        {
+            targetProfile = profiles[idx];
+            delete targetProfile["pw"];
+
+            console.log("Profile found!");
+            console.log(JSON.stringify(targetProfile));
+        }
+    }
+
+    res.json(targetProfile);
 })
 
 

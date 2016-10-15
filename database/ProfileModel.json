@@ -3,12 +3,8 @@
     [
         {
             "id" : "jcena",
-            "name" :
-            {
-                "nick name" : "You can't see me",
-                "given name"  : "John",
-                "family name" : "Cena"
-            },
+            "pw" : "jcena123",
+            "name" : "John Cena",
             "country" : "USA",
             "contact #" : "911",
             "email" : "jcena@gmail.com",
@@ -16,12 +12,8 @@
         },
         {
             "id" : "hulkhogan",
-            "name" :
-            {
-                "nick name" : "Hulk",
-                "given name"  : "Terry",
-                "family name" : "Hogan"
-            },
+            "pw" : "hulkhogan123",
+            "name" : "Terry Hulk Hogan",
             "country" : "USA",
             "contact #" : "911-HELP",
             "email" : "hulk-hogan@gmail.com",
@@ -29,12 +21,8 @@
         },
         {
             "id" : "fpj",
-            "name" :
-            {
-                "nick name" : "Da King",
-                "given name"  : "Fernando",
-                "family name" : "Poe"
-            },
+            "pw" : "fpj123",
+            "name" : "Fernando Poe Jr.",
             "country" : "Philippines",
             "contact #" : "8888",
             "email" : "fpj.da.king@gmail.com",
@@ -42,12 +30,8 @@
         },
         {
             "id" : "abourdain",
-            "name" :
-            {
-                "nick name" : "no reservations",
-                "given name"  : "Anthony",
-                "family name" : "Bourdain"
-            },
+            "pw" : "abourdain123",
+            "name" : "Anthony Bourdain",
             "country" : "USA",
             "contact #" : "90210",
             "email" : "no-reservations@gmail.com",
