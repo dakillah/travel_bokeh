@@ -125,6 +125,8 @@ app.post('/login', function (req, res)
 {
     var username = req.body.username;
     var password = req.body.password;
+    var profileType = req.body.type; //0-traveller, 1-travelgrapher
+
     var profiles = database["Profiles"];
 
     var targetProfile = [];
@@ -133,11 +135,32 @@ app.post('/login', function (req, res)
     {
         if( profiles[idx]["id"] == username && profiles[idx]["pw"] == password )
         {
-            targetProfile = profiles[idx];
+            var targetProfile = profiles[idx];
             delete targetProfile["pw"];
 
             console.log("Profile found!");
             console.log(JSON.stringify(targetProfile));
+
+            if(profileType == 1)
+            {
+                var travelgraphers = database["Travelgraphers"];
+                for(idx2 in travelgraphers)
+                {
+                    if( travelgraphers[idx2]["profile"] == username )
+                    {
+                        var tmp = targetProfile;
+                        targetProfile = travelgraphers[idx2];
+                        targetProfile["profile"] = tmp;
+
+                        console.log("Profile is a travelgrapher!");
+                        console.log(JSON.stringify(targetProfile));
+
+                        break;
+                    }
+                }
+            }
+
+            break;
         }
     }
 
