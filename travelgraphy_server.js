@@ -93,7 +93,7 @@ function populateTravelgrapherDetails(profile)
         }
     }
 
-    return 
+    return targetProfile;
 }
 
 
