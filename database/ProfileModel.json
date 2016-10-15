@@ -1,7 +1,6 @@
 {
     "Profiles" :
-    {
-        "jcena" :
+    [
         {
             "id" : "jcena",
             "name" :
@@ -15,7 +14,6 @@
             "email" : "jcena@gmail.com",
             "profession" : "Professional Wrestler"
         },
-        "hulkhogan" :
         {
             "id" : "hulkhogan",
             "name" :
@@ -29,7 +27,6 @@
             "email" : "hulk-hogan@gmail.com",
             "profession" : "Professional Wrestler"
         },
-        "fpj" :
         {
             "id" : "fpj",
             "name" :
@@ -43,7 +40,6 @@
             "email" : "fpj.da.king@gmail.com",
             "profession" : "Action Star"
         },
-        "abourdain" :
         {
             "id" : "abourdain",
             "name" :
@@ -57,5 +53,5 @@
             "email" : "no-reservations@gmail.com",
             "profession" : "Food Traveller"
         }
-    }
+    ]
 }

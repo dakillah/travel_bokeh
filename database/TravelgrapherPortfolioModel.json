@@ -1,8 +1,8 @@
 {
     "Portfolios" :
-    {
-        "jcena" :
+    [
         {
+            "id" : "jcena",
             "photo paths" :
             [
             ],
@@ -13,8 +13,8 @@
             [
             ]
         },
-        "hulkhogan" :
         {
+            "id" : "hulkhogan",
             "photo paths" :
             [
             ],
@@ -25,8 +25,8 @@
             [
             ]
         },
-        "fpj" :
         {
+            "id" : "fpj",
             "photo paths" :
             [
             ],
@@ -37,5 +37,5 @@
             [
             ]
         }
-    }
+    ]
 }
