@@ -6,7 +6,7 @@
             "pw" : "jcena123",
             "name" : "John Cena",
             "country" : "USA",
-            "contact #" : "911",
+            "contact" : "911",
             "email" : "jcena@gmail.com",
             "profession" : "Professional Wrestler"
         },
@@ -15,7 +15,7 @@
             "pw" : "hulkhogan123",
             "name" : "Terry Hulk Hogan",
             "country" : "USA",
-            "contact #" : "911-HELP",
+            "contact" : "911-HELP",
             "email" : "hulk-hogan@gmail.com",
             "profession" : "Professional Wrestler"
         },
@@ -24,7 +24,7 @@
             "pw" : "fpj123",
             "name" : "Fernando Poe Jr.",
             "country" : "Philippines",
-            "contact #" : "8888",
+            "contact" : "8888",
             "email" : "fpj.da.king@gmail.com",
             "profession" : "Action Star"
         },
@@ -33,7 +33,7 @@
             "pw" : "abourdain123",
             "name" : "Anthony Bourdain",
             "country" : "USA",
-            "contact #" : "90210",
+            "contact" : "90210",
             "email" : "no-reservations@gmail.com",
             "profession" : "Food Traveller"
         }

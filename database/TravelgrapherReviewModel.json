@@ -4,15 +4,15 @@
         {
             "id" : "RVW0001",
             "date" : "2014-01-01T23:28:56.782Z",
-            "reviewer name" : "Mankind",
-            "review body" : "The photos taken were of professional quality. I couldn't ask for more. He is very friendly.",
+            "reviewer" : "Mankind",
+            "review" : "The photos taken were of professional quality. I couldn't ask for more. He is very friendly.",
             "stars" : "5stars"
         },
         {
             "id" : "RVW0002",
             "date" : "2014-01-01T23:28:56.782Z",
-            "reviewer name" : "Vince McMahon",
-            "review body" : "Very professional. He showed me more places to visit which were surprisingly great.",
+            "reviewer" : "Vince McMahon",
+            "review" : "Very professional. He showed me more places to visit which were surprisingly great.",
             "stars" : "5stars"
         }
     ]

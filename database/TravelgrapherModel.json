@@ -24,19 +24,19 @@
             [
                 "GGT002"
             ],
-            "portfolio" :
+            "portfolios" :
             {
-                "photo paths" :
+                "photos" :
                 [
                 ],
-                "video paths" :
+                "videos" :
                 [
                 ],
-                "VR paths" :
+                "VRs" :
                 [
                 ]
             },
-            "base service fee" : 20
+            "fee" : 20
         },
         {
             "profile" : "hulkhogan",
@@ -59,19 +59,19 @@
             [
                 "RVW0001"
             ],
-            "portfolio" :
+            "portfolios" :
             {
-                "photo paths" :
+                "photos" :
                 [
                 ],
-                "video paths" :
+                "videos" :
                 [
                 ],
-                "VR paths" :
+                "VRs" :
                 [
                 ]
             },
-            "base service fee" : 20
+            "fee" : 20
         },
         {
             "profile" : "fpj",
@@ -95,19 +95,19 @@
             [
                 "RVW0001"
             ],
-            "portfolio" :
+            "portfolios" :
             {
-                "photo paths" :
+                "photos" :
                 [
                 ],
-                "video paths" :
+                "videos" :
                 [
                 ],
-                "VR paths" :
+                "VRs" :
                 [
                 ]
             },
-            "base service fee" : 20
+            "fee" : 20
         }
     ]
 }

@@ -3,19 +3,27 @@
     [
         {
             "id" : "GGT001",
-            "gadget name" : "DSLR Camera"
+            "name" : "DSLR Camera",
+            "free" : 20,
+            "fixed" : 1
         },
         {
             "id" : "GGT002",
-            "gadget name" : "Go Pro"
+            "name" : "Go Pro",
+            "free" : 20,
+            "fixed" : 0
         },
         {
             "id" : "GGT003",
-            "gadget name" : "Drone"
+            "name" : "Drone",
+            "free" : 20,
+            "fixed" : 0
         },
         {
             "id" : "GGT004",
-            "gadget name" : "Selfie Stick"
+            "name" : "Selfie Stick",
+            "free" : 20,
+            "fixed" : 0
         }
     ]
 }

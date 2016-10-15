@@ -3,15 +3,21 @@
     [
         {
             "id" : "SVC001",
-            "service name" : "Tourguide"
+            "name" : "Tourguide",
+            "free" : 20,
+            "fixed" : 1
         },
         {
             "id" : "SVC003",
-            "service name" : "Photographer"
+            "name" : "Photographer",
+            "free" : 20,
+            "fixed" : 0
         },
         {
             "id" : "SVC003",
-            "service name" : "Videographer"
+            "name" : "Videographer",
+            "free" : 20,
+            "fixed" : 0
         }
     ]
 }

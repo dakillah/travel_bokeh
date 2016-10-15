@@ -70,7 +70,7 @@ function getJSONList(IDs, modelName)
 
 function populateTravelgrapherDetails(profile)
 {
-    var travelgraphers = database["Travelgraphers"];
+    var travelgraphers = JSON.parse(JSON.stringify(database["Travelgraphers"]));
     var targetProfile;
 
     for(idx2 in travelgraphers)
@@ -176,12 +176,13 @@ app.post('/login', function (req, res)
     var password = req.body.password;
     var profileType = req.body.type; //0-traveller, 1-travelgrapher
 
-    var profiles = database["Profiles"];
+    var profiles = JSON.parse(JSON.stringify(database["Profiles"]));
 
     var targetProfile = [];
 
     for(idx in profiles)
     {
+
         if( profiles[idx]["id"] == username && profiles[idx]["pw"] == password )
         {
             var targetProfile = profiles[idx];

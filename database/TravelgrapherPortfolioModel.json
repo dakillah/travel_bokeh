@@ -3,37 +3,37 @@
     [
         {
             "id" : "jcena",
-            "photo paths" :
+            "photos" :
             [
             ],
-            "video paths" :
+            "videos" :
             [
             ],
-            "VR paths" :
+            "VRs" :
             [
             ]
         },
         {
             "id" : "hulkhogan",
-            "photo paths" :
+            "photos" :
             [
             ],
-            "video paths" :
+            "videos" :
             [
             ],
-            "VR paths" :
+            "VRs" :
             [
             ]
         },
         {
             "id" : "fpj",
-            "photo paths" :
+            "photos" :
             [
             ],
-            "video paths" :
+            "videos" :
             [
             ],
-            "VR paths" :
+            "VRs" :
             [
             ]
         }

@@ -3,14 +3,14 @@
     [
         {
             "id" : "TRV0001",
-            "traveller id" : "abourdain",
-            "travelgrapher id" : "jcena",
-            "start date" : "",
-            "end date" : "",
-            "services used" :
+            "traveller_id" : "abourdain",
+            "travelgrapher_id" : "jcena",
+            "start_date" : "",
+            "end_date" : "",
+            "services" :
             [
             ],
-            "gadgets used" :
+            "gadgets" :
             [
             ],
             "photos" :
@@ -25,14 +25,14 @@
         },
         {
             "id" : "TRV0002",
-            "traveller id" : "abourdain",
-            "travelgrapher id" : "hulkhogan",
-            "start date" : "",
-            "end date" : "",
-            "services used" :
+            "traveller_id" : "abourdain",
+            "travelgrapher_id" : "hulkhogan",
+            "start_date" : "",
+            "end_date" : "",
+            "services" :
             [
             ],
-            "gadgets used" :
+            "gadgets" :
             [
             ],
             "photos" :
@@ -47,14 +47,14 @@
         },
         {
             "id" : "TRV0003",
-            "traveller id" : "abourdain",
-            "travelgrapher id" : "fpj",
-            "start date" : "",
-            "end date" : "",
-            "services used" :
+            "traveller_id" : "abourdain",
+            "travelgrapher_id" : "fpj",
+            "start_date" : "",
+            "end_date" : "",
+            "services" :
             [
             ],
-            "gadgets used" :
+            "gadgets" :
             [
             ],
             "photos" :
