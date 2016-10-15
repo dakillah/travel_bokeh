@@ -46,6 +46,55 @@ function createDB()
     database = mergeJSON(database, travelModels);
 }
 
+function getJSONList(IDs, modelName)
+{
+    var modelList = database[modelName];
+    var rcModelList = [];
+
+    for(idx in IDs)
+    {
+        var id = IDs[idx];
+
+        for(idx2 in modelList)
+        {
+            if(modelList[idx2]["id"] == id)
+            {
+                rcModelList.push(modelList[idx2]);
+                break;
+            }
+        }
+    }
+
+    return rcModelList;
+}
+
+function populateTravelgrapherDetails(profile)
+{
+    var travelgraphers = database["Travelgraphers"];
+    var targetProfile;
+
+    for(idx2 in travelgraphers)
+    {
+        if( travelgraphers[idx2]["profile"] == profile["id"] )
+        {
+            var tmp = profile;
+            targetProfile = travelgraphers[idx2];
+            targetProfile["profile"] = tmp;
+
+            targetProfile["destinations"] = getJSONList(targetProfile["destinations"], "Destinations");
+            targetProfile["services"] = getJSONList(targetProfile["services"], "Services");
+            targetProfile["gadgets"] = getJSONList(targetProfile["gadgets"], "Gadgets");
+            targetProfile["reviews"] = getJSONList(targetProfile["reviews"], "Reviews");
+
+            console.log("Profile is a travelgrapher!");
+            console.log(JSON.stringify(targetProfile));
+
+            break;
+        }
+    }
+
+    return 
+}
 
 
 app.get('/listDestinations', function (req, res)
@@ -143,21 +192,7 @@ app.post('/login', function (req, res)
 
             if(profileType == 1)
             {
-                var travelgraphers = database["Travelgraphers"];
-                for(idx2 in travelgraphers)
-                {
-                    if( travelgraphers[idx2]["profile"] == username )
-                    {
-                        var tmp = targetProfile;
-                        targetProfile = travelgraphers[idx2];
-                        targetProfile["profile"] = tmp;
-
-                        console.log("Profile is a travelgrapher!");
-                        console.log(JSON.stringify(targetProfile));
-
-                        break;
-                    }
-                }
+                targetProfile = populateTravelgrapherDetails(targetProfile);
             }
 
             break;

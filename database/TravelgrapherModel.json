@@ -9,10 +9,34 @@
                 "SG02",
                 "SG03"
             ],
-            "services" : "",
-            "gadgets" : "",
-            "reviews" : "",
-            "portfolio" : ""
+            "services" :
+            [
+                "SVC001",
+                "SVC002",
+                "SVC003"
+            ],
+            "gadgets" :
+            [
+                "GGT001",
+                "GGT002"
+            ],
+            "reviews" :
+            [
+                "GGT002"
+            ],
+            "portfolio" :
+            {
+                "photo paths" :
+                [
+                ],
+                "video paths" :
+                [
+                ],
+                "VR paths" :
+                [
+                ]
+            },
+            "base service fee" : 20
         },
         {
             "profile" : "hulkhogan",
@@ -20,10 +44,34 @@
             [
                 "SG03"
             ],
-            "services" : "",
-            "gadgets" : "",
-            "reviews" : "",
-            "portfolio" : ""
+            "services" :
+            [
+                "SVC001",
+                "SVC002",
+                "SVC003"
+            ],
+            "gadgets" :
+            [
+                "GGT001",
+                "GGT003"
+            ],
+            "reviews" :
+            [
+                "RVW0001"
+            ],
+            "portfolio" :
+            {
+                "photo paths" :
+                [
+                ],
+                "video paths" :
+                [
+                ],
+                "VR paths" :
+                [
+                ]
+            },
+            "base service fee" : 20
         },
         {
             "profile" : "fpj",
@@ -32,10 +80,34 @@
                 "SG01",
                 "SG02"
             ],
-            "services" : "",
-            "gadgets" : "",
-            "reviews" : "",
-            "portfolio" : ""
+            "services" :
+            [
+                "SVC001",
+                "SVC002",
+                "SVC003"
+            ],
+            "gadgets" :
+            [
+                "GGT001",
+                "GGT003"
+            ],
+            "reviews" :
+            [
+                "RVW0001"
+            ],
+            "portfolio" :
+            {
+                "photo paths" :
+                [
+                ],
+                "video paths" :
+                [
+                ],
+                "VR paths" :
+                [
+                ]
+            },
+            "base service fee" : 20
         }
     ]
 }
